@@ -1,0 +1,72 @@
+CSS & html for thebuttons, Anause and use: CSS: *, *::after, *::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    background: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-color: #004242;
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-position: center center;
+}
+.btn {
+    width: 300px;
+    height: 100px;
+    padding: 5px;
+    background: none;
+    position: relative;
+    border: none;
+}
+svg {
+    fill: none;
+    stroke: 2px;
+    stroke-width: 6px;
+    position: absolute;
+    inset: 0;
+    transition: all 800ms ease;
+}
+a {
+    position: absolute;
+    inset: 25% 20%;
+    text-decoration: none;
+    font-family: calibri;
+    font-size: 1em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #fff;
+    user-select: none;
+    background: -webkit-linear-gradient(40deg, #0ebac5, #3F5EFB);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn:hover svg {
+    stroke-dasharray: 130 350;
+    stroke-dashoffset: 500;
+}
+Html: <main class="main">
+<div class="btn">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 265 63.6">
+
+            <defs>
+                <linearGradient id="mix-color">
+                    <stop offset="0%" stop-color="#0ebac5" />
+                    <stop offset="100%" stop-color="#3F5EFB"/>
+                </linearGradient>
+            </defs>
+            <rect x="4" y="2" width="200" height="60" rx="40" stroke="url(#mix-color)"/>
+        </svg>
+        <a href="#">Features</a>
+    </button>
+</main>
